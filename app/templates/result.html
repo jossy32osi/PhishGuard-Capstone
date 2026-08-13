@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }} | PhishGuard</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='style.css') }}"
+    >
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        🛡️ PhishGuard
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/learn">Learn</a>
+        <a href="/spot">Spot the Phish</a>
+        <a href="/quiz">Quiz</a>
+        <a href="/respond">What To Do</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <p class="tag">QUIZ COMPLETE</p>
+
+    <h1>Your Awareness Result</h1>
+
+    <p>
+        Here's how you performed in the PhishGuard
+        phishing-awareness quiz.
+    </p>
+
+</section>
+
+
+<section class="result-container">
+
+    {% set percentage = (score / total * 100) | round | int %}
+
+
+    <div class="result-card">
+
+        <div class="result-icon">
+            🛡️
+        </div>
+
+        <h2>
+            {{ score }} / {{ total }}
+        </h2>
+
+        <p class="result-percentage">
+            {{ percentage }}%
+        </p>
+
+
+        {% if score == total %}
+
+            <h3>Excellent! 🎉</h3>
+
+            <p>
+                You demonstrated a strong understanding
+                of common phishing warning signs and
+                safe responses.
+            </p>
+
+        {% elif score >= 3 %}
+
+            <h3>Good Job! 👍</h3>
+
+            <p>
+                You have a good understanding of phishing.
+                Review the awareness material to strengthen
+                your knowledge even further.
+            </p>
+
+        {% else %}
+
+            <h3>Keep Learning 📚</h3>
+
+            <p>
+                Phishing awareness takes practice.
+                Review the learning material and try
+                the quiz again.
+            </p>
+
+        {% endif %}
+
+
+        <div class="result-actions">
+
+            <a
+                class="button primary"
+                href="/quiz"
+            >
+                Try Again
+            </a>
+
+            <a
+                class="button secondary"
+                href="/respond"
+            >
+                View Response Guide
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="result-message">
+
+        <h2>
+            Remember the PhishGuard Rule
+        </h2>
+
+        <div class="result-rule">
+
+            <span>STOP</span>
+            <span>→</span>
+            <span>CHECK</span>
+            <span>→</span>
+            <span>VERIFY</span>
+            <span>→</span>
+            <span>REPORT</span>
+
+        </div>
+
+        <p>
+            When something looks suspicious, don't rush.
+            Take a moment to verify before taking action.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        PhishGuard — Building Safer Digital Habits
+    </p>
+
+</footer>
+
+</body>
+
+</html>

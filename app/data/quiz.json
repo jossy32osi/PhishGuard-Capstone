@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "question": "Which is a common warning sign of a phishing message?",
+        "options": [
+            "An unexpected urgent request",
+            "A normal calendar reminder",
+            "A routine greeting from a known contact",
+            "A scheduled meeting announcement"
+        ],
+        "answer": 0,
+        "explanation": "Phishing messages often create urgency or pressure the recipient to act quickly."
+    },
+    {
+        "id": 2,
+        "question": "What should you do before clicking an unexpected link?",
+        "options": [
+            "Click it quickly before it expires",
+            "Verify where the message came from",
+            "Forward it to everyone",
+            "Enter your password first"
+        ],
+        "answer": 1,
+        "explanation": "Unexpected links should be checked carefully and verified through a trusted method before taking action."
+    },
+    {
+        "id": 3,
+        "question": "Which sender address is most suspicious?",
+        "options": [
+            "support@company.example",
+            "admin@school.example",
+            "security@paypa1-example.com",
+            "office@organization.example"
+        ],
+        "answer": 2,
+        "explanation": "Attackers may use lookalike domains or altered spellings to make addresses appear legitimate."
+    },
+    {
+        "id": 4,
+        "question": "What should you do if you receive a suspicious message asking for sensitive information?",
+        "options": [
+            "Reply with the requested information",
+            "Click the link to investigate",
+            "Ignore the warning signs",
+            "Stop and verify the request independently"
+        ],
+        "answer": 3,
+        "explanation": "Sensitive requests should be independently verified using a trusted communication channel."
+    },
+    {
+        "id": 5,
+        "question": "What is the PhishGuard safety model?",
+        "options": [
+            "Click → Login → Continue → Share",
+            "Stop → Check → Verify → Report",
+            "Open → Read → Reply → Delete",
+            "Download → Scan → Install → Run"
+        ],
+        "answer": 1,
+        "explanation": "PhishGuard uses STOP → CHECK → VERIFY → REPORT as its core phishing-awareness model."
+    }
+]

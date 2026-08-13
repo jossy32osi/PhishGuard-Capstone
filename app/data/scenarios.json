@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "sender": "security-alert@example-security.com",
+        "subject": "URGENT: Your account will be suspended",
+        "message": "We detected unusual activity on your account. You must verify your account immediately or access will be suspended today. Click the verification link to continue.",
+        "is_phishing": true,
+        "explanation": "This is phishing. The message creates urgency, threatens account suspension, and asks the user to verify through an unexpected link.",
+        "warning_signs": [
+            "Urgent language",
+            "Threat of account suspension",
+            "Unexpected verification request",
+            "Suspicious link"
+        ]
+    },
+    {
+        "id": 2,
+        "sender": "school@example.edu",
+        "subject": "Reminder: Staff meeting tomorrow",
+        "message": "Hello team, this is a reminder that the monthly staff meeting will take place tomorrow at 10:00 AM in Conference Room B. Please contact the office if you have any questions.",
+        "is_phishing": false,
+        "explanation": "This example does not contain obvious phishing indicators. It provides routine information without requesting sensitive information or suspicious actions.",
+        "warning_signs": []
+    },
+    {
+        "id": 3,
+        "sender": "billing-support@paypa1-example.com",
+        "subject": "Payment information needs attention",
+        "message": "Your payment information could not be confirmed. Please review your account immediately using the link provided in this message.",
+        "is_phishing": true,
+        "explanation": "This is phishing. The sender address is suspicious, the message creates concern about payment information, and it encourages the user to use an unexpected link.",
+        "warning_signs": [
+            "Suspicious sender address",
+            "Unexpected payment request",
+            "Pressure to act",
+            "Link-based verification"
+        ]
+    },
+    {
+        "id": 4,
+        "sender": "community@example.org",
+        "subject": "Community newsletter",
+        "message": "This month's community newsletter is now available. You can read the latest announcements during your next visit to the official community website.",
+        "is_phishing": false,
+        "explanation": "There is no obvious request for sensitive information or urgent action. The message directs users to the official website rather than asking them to follow an unexpected login link.",
+        "warning_signs": []
+    }
+]

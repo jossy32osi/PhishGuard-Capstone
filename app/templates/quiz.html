@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }} | PhishGuard</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='style.css') }}"
+    >
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">🛡️ PhishGuard</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/learn">Learn</a>
+        <a href="/spot">Spot the Phish</a>
+        <a href="/quiz">Quiz</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <p class="tag">KNOWLEDGE ASSESSMENT</p>
+
+    <h1>Phishing Awareness Quiz</h1>
+
+    <p>
+        Test your understanding of common phishing
+        warning signs and safe responses.
+    </p>
+
+</section>
+
+
+<section class="quiz-container">
+
+    <div class="quiz-progress">
+
+        <span>
+            Question {{ question_number + 1 }} of {{ total }}
+        </span>
+
+        <span>
+            Score: {{ score|default(0) }}
+        </span>
+
+    </div>
+
+
+    <div class="quiz-card">
+
+        <h2>
+            {{ question.question }}
+        </h2>
+
+
+        <form method="post" action="/quiz/check">
+
+            <input
+                type="hidden"
+                name="question_id"
+                value="{{ question.id }}"
+            >
+
+            <input
+                type="hidden"
+                name="score"
+                value="{{ score|default(0) }}"
+            >
+
+
+            <div class="quiz-options">
+
+                {% for option in question.options %}
+
+                <label class="quiz-option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="{{ loop.index0 }}"
+                        required
+                    >
+
+                    <span>{{ option }}</span>
+
+                </label>
+
+                {% endfor %}
+
+            </div>
+
+
+            <button
+                class="quiz-submit"
+                type="submit"
+            >
+
+                {% if question_number + 1 == total %}
+                    Finish Quiz
+                {% else %}
+                    Next Question →
+                {% endif %}
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        PhishGuard — Building Safer Digital Habits
+    </p>
+
+</footer>
+
+</body>
+
+</html>

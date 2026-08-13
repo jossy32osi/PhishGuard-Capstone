@@ -134,3 +134,48 @@ Tell the appropriate person or security team.
 ### PHISHGUARD
 
 **Think Before You Click.**
+
+# 🛡️ PHISHGUARD QUICK RESPONSE CARD
+
+# RECEIVED A SUSPICIOUS MESSAGE?
+
+## 🛑 STOP
+
+Don't click.
+Don't reply.
+Don't rush.
+
+---
+
+## 🔎 CHECK
+
+Look at:
+
+- Sender
+- Link
+- Request
+- Urgency
+- Spelling
+- Unexpected attachments
+
+---
+
+## ✅ VERIFY
+
+Confirm the request independently
+through a trusted channel.
+
+---
+
+## 🚨 REPORT
+
+Use your organization's approved
+process for reporting suspicious messages.
+
+---
+
+# REMEMBER
+
+## STOP → CHECK → VERIFY → REPORT
+
+### THINK BEFORE YOU CLICK.

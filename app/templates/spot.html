@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }} | PhishGuard</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='style.css') }}"
+    >
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">🛡️ PhishGuard</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/learn">Learn</a>
+        <a href="/spot">Spot the Phish</a>
+        <a href="/quiz">Quiz</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <p class="tag">INTERACTIVE EXERCISE</p>
+
+    <h1>Spot the Phish</h1>
+
+    <p>
+        Read the message carefully and decide whether
+        it is phishing or not.
+    </p>
+
+</section>
+
+
+<section class="spot-container">
+
+    <div class="progress">
+        Scenario {{ scenario_number + 1 }} of {{ total }}
+    </div>
+
+
+    <div class="message-card">
+
+        <div class="message-header">
+
+            <div>
+                <strong>From:</strong>
+                {{ scenario.sender }}
+            </div>
+
+            <div>
+                <strong>Subject:</strong>
+                {{ scenario.subject }}
+            </div>
+
+        </div>
+
+
+        <div class="message-body">
+
+            <p>{{ scenario.message }}</p>
+
+        </div>
+
+    </div>
+
+
+    {% if not answered %}
+
+    <div class="decision">
+
+        <h2>What do you think?</h2>
+
+        <p>
+            Is this message phishing?
+        </p>
+
+
+        <form method="post" action="/spot/check">
+
+            <input
+                type="hidden"
+                name="scenario_id"
+                value="{{ scenario.id }}"
+            >
+
+            <button
+                class="answer-button phishing"
+                type="submit"
+                name="answer"
+                value="phishing"
+            >
+                🚨 Phishing
+            </button>
+
+
+            <button
+                class="answer-button safe-answer"
+                type="submit"
+                name="answer"
+                value="safe"
+            >
+                ✓ Not Phishing
+            </button>
+
+        </form>
+
+    </div>
+
+    {% else %}
+
+    <div class="result-box {% if correct %}correct{% else %}incorrect{% endif %}">
+
+        {% if correct %}
+
+        <h2>✓ Correct!</h2>
+
+        <p>
+            Good job. You correctly identified this scenario.
+        </p>
+
+        {% else %}
+
+        <h2>✗ Not Quite</h2>
+
+        <p>
+            Review the warning signs and try the next scenario.
+        </p>
+
+        {% endif %}
+
+
+        <div class="explanation">
+
+            <h3>Why?</h3>
+
+            <p>{{ scenario.explanation }}</p>
+
+        </div>
+
+
+        {% if scenario.warning_signs %}
+
+        <div class="warning-list">
+
+            <h3>Warning Signs</h3>
+
+            <ul>
+
+                {% for sign in scenario.warning_signs %}
+
+                <li>{{ sign }}</li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+        {% endif %}
+
+
+        <a
+            class="button primary next-button"
+            href="/spot?scenario={{ next_index }}"
+        >
+            Next Scenario →
+        </a>
+
+    </div>
+
+    {% endif %}
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        PhishGuard — Building Safer Digital Habits
+    </p>
+
+</footer>
+
+</body>
+
+</html>
