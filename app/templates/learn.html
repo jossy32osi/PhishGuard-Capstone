@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn | PhishGuard</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+
+    <title>{{ title }} | PhishGuard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', path='style.css') }}">
 </head>
 
 <body>
 
 <header class="navbar">
+
     <div class="logo">🛡️ PhishGuard</div>
 
     <nav>
@@ -17,128 +21,259 @@
         <a href="/learn">Learn</a>
         <a href="/spot">Spot the Phish</a>
         <a href="/quiz">Quiz</a>
+        <a href="/respond">Response Guide</a>
     </nav>
+
 </header>
+
 
 <main>
 
 <section class="page-header">
+
     <p class="tag">PHISHING AWARENESS</p>
+
     <h1>Learn to Recognize Phishing</h1>
+
     <p>
-        Understanding the warning signs is one of the best ways
-        to protect yourself from phishing attacks.
+        Phishing attacks use deceptive messages, links, requests,
+        and impersonation to trick people into taking unsafe actions.
     </p>
-</section>
-
-<section class="learning-content">
-
-    <article class="lesson-card">
-        <div class="lesson-number">01</div>
-        <h2>What is Phishing?</h2>
-
-        <p>
-            Phishing is a type of social engineering in which an
-            attacker attempts to trick someone into revealing
-            information, clicking a harmful link, opening an
-            unsafe attachment, or taking another unsafe action.
-        </p>
-    </article>
-
-
-    <article class="lesson-card">
-        <div class="lesson-number">02</div>
-        <h2>Watch for Urgency</h2>
-
-        <p>
-            Phishing messages often create pressure by claiming
-            that something must be done immediately.
-        </p>
-
-        <div class="warning">
-            ⚠️ Be cautious when a message says things like:
-            "Act now", "Your account will be suspended",
-            or "Immediate action required."
-        </div>
-    </article>
-
-
-    <article class="lesson-card">
-        <div class="lesson-number">03</div>
-        <h2>Check the Sender</h2>
-
-        <p>
-            Don't assume that a message is legitimate simply
-            because it contains a familiar company name or logo.
-        </p>
-
-        <div class="warning">
-            🔎 Carefully check the sender's address and look
-            for unusual domains, spelling, or unexpected requests.
-        </div>
-    </article>
-
-
-    <article class="lesson-card">
-        <div class="lesson-number">04</div>
-        <h2>Be Careful With Links</h2>
-
-        <p>
-            Unexpected links can lead to fake websites designed
-            to collect information.
-        </p>
-
-        <div class="warning">
-            🔗 Don't click suspicious links. Verify the request
-            through a trusted method instead.
-        </div>
-    </article>
-
-
-    <article class="lesson-card">
-        <div class="lesson-number">05</div>
-        <h2>Protect Sensitive Information</h2>
-
-        <p>
-            Be cautious when a message unexpectedly asks for
-            passwords, verification codes, financial information,
-            or other sensitive details.
-        </p>
-
-        <div class="warning">
-            🔐 Never provide sensitive information simply because
-            an unexpected message asks for it.
-        </div>
-    </article>
-
-
-    <article class="lesson-card">
-        <div class="lesson-number">06</div>
-        <h2>Verify Before Acting</h2>
-
-        <p>
-            If a request seems unusual, independently verify it
-            using a trusted website, phone number, or known contact.
-        </p>
-
-        <div class="safe">
-            ✓ STOP → CHECK → VERIFY → REPORT
-        </div>
-    </article>
 
 </section>
 
 
-<section class="callout">
+<section class="learning-section">
 
-    <h2>Remember</h2>
+    <h2>What Is Phishing?</h2>
 
     <p>
-        Phishing relies on urgency, trust, fear, curiosity,
-        and authority to influence decisions.
+        Phishing is a type of social engineering in which an attacker
+        attempts to deceive a person into revealing information,
+        clicking a malicious or suspicious link, opening an attachment,
+        sending money, or performing another unsafe action.
     </p>
 
-    <strong>When in doubt, don't click.</strong>
+    <p>
+        Phishing messages can appear to come from trusted organizations,
+        colleagues, banks, schools, delivery services, or technical
+        support.
+    </p>
+
+</section>
+
+
+<section class="learning-section">
+
+    <h2>Common Warning Signs</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🚨</div>
+            <h3>Urgency</h3>
+            <p>
+                Messages may pressure you to act immediately or threaten
+                consequences if you do not respond.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🔗</div>
+            <h3>Suspicious Links</h3>
+            <p>
+                Unexpected links may lead to websites designed to
+                imitate legitimate services.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🔐</div>
+            <h3>Sensitive Information</h3>
+            <p>
+                Be cautious when a message asks for passwords,
+                verification codes, payment details, or personal data.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🎭</div>
+            <h3>Impersonation</h3>
+            <p>
+                Attackers may pretend to be managers, colleagues,
+                banks, schools, support teams, or other trusted contacts.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="learning-section">
+
+    <h2>🛡️ Before You Act — Ask Yourself</h2>
+
+    <p>
+        Use this quick checklist whenever you receive an unexpected
+        message or request.
+    </p>
+
+    <div class="checklist">
+
+        <div class="check-item">
+            ☐ Do I recognize the sender?
+        </div>
+
+        <div class="check-item">
+            ☐ Was I expecting this message?
+        </div>
+
+        <div class="check-item">
+            ☐ Is the request urgent or unusual?
+        </div>
+
+        <div class="check-item">
+            ☐ Does the link or attachment look trustworthy?
+        </div>
+
+        <div class="check-item">
+            ☐ Is the message asking for sensitive information?
+        </div>
+
+        <div class="check-item">
+            ☐ Can I verify the request independently?
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="framework">
+
+    <h2>The PhishGuard Safety Model</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <span>01</span>
+            <h3>STOP</h3>
+            <p>
+                Pause. Don't allow urgency or pressure to control
+                your decision.
+            </p>
+        </div>
+
+
+        <div class="step">
+            <span>02</span>
+            <h3>CHECK</h3>
+            <p>
+                Examine the sender, request, links, attachments,
+                and warning signs.
+            </p>
+        </div>
+
+
+        <div class="step">
+            <span>03</span>
+            <h3>VERIFY</h3>
+            <p>
+                Confirm the request through a trusted and independent
+                communication channel.
+            </p>
+        </div>
+
+
+        <div class="step">
+            <span>04</span>
+            <h3>REPORT</h3>
+            <p>
+                Report suspicious messages using the appropriate
+                organizational or institutional procedure.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="learning-section">
+
+    <div class="card">
+
+        <h2>Remember</h2>
+
+        <p>
+            A message does not have to look obviously fake to be
+            suspicious. Familiar names, realistic language, and urgent
+            requests can all be used to create trust and pressure.
+        </p>
+
+        <h3>STOP → CHECK → VERIFY → REPORT</h3>
+
+        <p>
+            <strong>When in doubt, don't click.</strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <h2>Continue Learning</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🔍</div>
+
+            <h3>Spot the Phish</h3>
+
+            <p>
+                Practice identifying suspicious messages using
+                fictional phishing scenarios.
+            </p>
+
+            <a href="/spot">Start Exercise →</a>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🧠</div>
+
+            <h3>Take the Quiz</h3>
+
+            <p>
+                Test your phishing-awareness knowledge and receive
+                a score.
+            </p>
+
+            <a href="/quiz">Take Quiz →</a>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🛡️</div>
+
+            <h3>Response Guide</h3>
+
+            <p>
+                Learn what to do when you encounter a suspicious
+                message.
+            </p>
+
+            <a href="/respond">View Guide →</a>
+        </div>
+
+    </div>
 
 </section>
 

@@ -724,3 +724,20 @@ footer {
     background: #172033;
     color: white;
 }
+
+/* PhishGuard Safety Checklist */
+
+.checklist {
+    max-width: 800px;
+    margin: 30px auto;
+    display: grid;
+    gap: 12px;
+}
+
+.check-item {
+    padding: 16px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 1rem;
+}
