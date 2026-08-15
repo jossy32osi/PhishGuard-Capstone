@@ -1,265 +1,296 @@
 # PhishGuard
-## Phishing Awareness & Education Kit
+## Phishing Awareness & Education Platform
 
 ### NextGen Capstone Project
 
-**Project:** PhishGuard  
-**Focus:** Cybersecurity Awareness & Phishing Prevention  
-**Prepared by:** Joshua Oke Osiogo  
+**Project:** PhishGuard 
+**Focus:** Cybersecurity Awareness & Phishing Prevention 
+**Prepared by:** Joshua Oke Emonina Osiogo 
 **Programme:** NextGen Capstone Project
 
----
 
-# Slide 1 — Title
+
+#  Title
 
 ## PhishGuard
 
 ### Think Before You Click
 
-A practical phishing awareness and education kit designed to help users recognize, prevent, and safely respond to phishing attacks.
+A practical phishing awareness and education platform designed to help users recognize suspicious communications, practice identifying phishing attempts, test their knowledge, and learn how to respond safely.
 
 **NextGen Capstone Project**
 
----
 
-# Slide 2 — The Problem
+
+#  The Problem
 
 ## Why Phishing Awareness Matters
 
-Phishing attacks attempt to manipulate users into:
+Phishing messages can trick users into:
 
-- Clicking malicious or suspicious links
-- Opening unsafe attachments
+- Clicking suspicious links
+- Opening unexpected attachments
 - Sharing sensitive information
-- Revealing authentication information
-- Making fraudulent payments
+- Revealing passwords or verification codes
+- Making unauthorized payments
 - Trusting impersonated individuals or organizations
 
-### The challenge
+### The Challenge
 
 Cybersecurity is not only a technical problem.
 
 **Human decision-making is also an important part of security.**
 
----
 
-# Slide 3 — Project Goal
 
-## What is PhishGuard?
+#  Project Goal & Objectives
 
-PhishGuard was developed to provide an accessible and practical phishing awareness solution.
+## Project Goal
 
-### Project objectives
+Develop a lightweight and interactive platform that helps users recognize phishing indicators and develop safer digital habits.
 
-1. Teach users how phishing works.
-2. Help users recognize common warning signs.
-3. Provide practical phishing identification exercises.
-4. Teach users how to respond safely.
-5. Provide quick-reference guidance.
-6. Measure awareness and knowledge.
-7. Encourage safer digital habits.
+## Objectives
 
----
+### 01 — Educate
+Teach common phishing warning signs.
 
-# Slide 4 — The PhishGuard Approach
+### 02 — Practice
+Allow users to analyze fictional phishing scenarios.
 
-## STOP → CHECK → VERIFY → REPORT
+### 03 — Assess
+Test phishing-awareness knowledge through an interactive quiz.
 
-### STOP
+### 04 — Respond
+Provide practical guidance for handling suspicious communications.
 
-Don't rush or immediately interact with the message.
 
-### CHECK
 
-Look at the sender, request, urgency, links, and attachments.
+#  The PhishGuard Approach
 
-### VERIFY
+## Learn → Practice → Assess → Respond
 
-Confirm the request through an independently trusted channel.
+### LEARN
+Understand phishing and common warning signs.
 
-### REPORT
+### PRACTICE
+Analyze fictional suspicious messages.
 
-Report suspicious activity using the appropriate reporting procedure.
+### ASSESS
+Test knowledge through the interactive quiz.
 
-### Core message
+### RESPOND
+Learn safe actions to take when encountering suspicious communications.
+
+
+
+## Core Safety Model
+
+# STOP → CHECK → VERIFY → REPORT
 
 **When in doubt, don't click.**
 
----
 
-# Slide 5 — PhishGuard Awareness Kit
 
-## What We Built
+#  What We Built
 
-### 1. Phishing Awareness Guide
+## PhishGuard Application
 
-Explains phishing, warning signs, social engineering, and safe responses.
+### Learn Module
+Educational content covering phishing indicators and safe decision-making.
 
-### 2. Spot-the-Phish Exercise
-
-Uses fictional scenarios to help users identify suspicious messages.
-
-### 3. Response Quick Card
-
-Provides immediate guidance when a user encounters suspicious content.
-
-### 4. Awareness Poster
-
-Communicates key phishing prevention messages visually.
-
----
-
-# Slide 6 — Assessment Tools
-
-## Measuring Awareness
-
-PhishGuard includes two assessment components.
+### Spot the Phish
+Interactive fictional scenarios with answer feedback.
 
 ### Phishing Awareness Quiz
+Five-question interactive knowledge assessment with scoring.
 
-A 10-question knowledge assessment covering:
+### Response Guide
+Practical guidance for responding to suspicious communications.
 
-- Phishing indicators
+## Supporting Awareness Kit
+
+- Phishing Awareness Guide
+- Awareness Posters
+- Phishing Response Card
+- Spot-the-Phish Activity
+- Activity Guide
+
+
+
+#  Technology & Architecture
+
+## Technology Stack
+
+### Backend
+- Python
+- FastAPI
+- Uvicorn
+
+### Frontend
+- HTML
+- CSS
+- Jinja2 Templates
+
+### Data
+- JSON
+
+### Development & Version Control
+- Kali Linux
+- Python Virtual Environment
+- Git
+- GitHub
+
+## Application Flow
+
+USER 
+↓ 
+WEB INTERFACE 
+↓ 
+FASTAPI BACKEND 
+↓ 
+HTML/JINJA2 TEMPLATES 
+↓ 
+JSON QUIZ & SCENARIO DATA
+
+
+
+#  Learn Module
+
+## Feature 1 — Learn
+
+The Learn module introduces users to:
+
+- Phishing
+- Urgent requests
 - Suspicious links
-- Attachments
-- Verification codes
-- Social engineering
-- Reporting
+- Sensitive information requests
+- Unexpected attachments
+- Impersonation
+- Safe verification
 
-### Pre/Post Awareness Assessment
+### Safety Checklist
 
-Designed to compare awareness before and after training.
-
-This allows the project to evaluate whether participants demonstrate improved understanding.
-
----
-
-# Slide 7 — Example Phishing Scenario
-
-## Can You Spot the Phish?
-
-### Example
-
-**Subject:** URGENT: Your account will be suspended today
-
-> We detected unusual activity on your account. You must verify your account immediately or your access will be suspended.
-
-### Warning signs
-
-🚨 Urgency
-
-🔗 Unexpected verification link
-
-⚠️ Threat of account suspension
-
-🔐 Possible request for sensitive information
-
-### Correct response
+Before acting on an unexpected message:
 
 **STOP → CHECK → VERIFY → REPORT**
 
-Do not click the suspicious link.
+### Screenshot
 
----
+Insert Learn page screenshot here.
 
-# Slide 8 — Methodology
 
-## How PhishGuard Was Developed
 
-### Stage 1 — Research
+#  Spot the Phish
 
-Reviewed phishing awareness and cybersecurity guidance.
+## Feature 2 — Spot the Phish
 
-↓
+Users:
 
-### Stage 2 — Content Development
+1. Read a fictional scenario.
+2. Identify whether it is suspicious.
+3. Submit their answer.
+4. Receive feedback.
+5. Continue to another scenario.
 
-Converted research findings into accessible awareness materials.
+### Key Learning Point
 
-↓
+**Practice turns awareness into decision-making.**
 
-### Stage 3 — Practical Exercises
+### Screenshot
 
-Created fictional phishing scenarios and response guidance.
+Insert Spot-the-Phish screenshot here.
 
-↓
 
-### Stage 4 — Assessment
 
-Developed a quiz and pre/post awareness assessment.
+#  Quiz & Results
 
-↓
+## Feature 3 — Interactive Quiz
 
-### Stage 5 — Evaluation
+The quiz contains:
 
-Designed a framework for measuring awareness improvement.
+- Five phishing-awareness questions
+- Multiple-choice answers
+- Automatic answer evaluation
+- Score calculation
+- Final result page
+- Try Again functionality
 
----
+### Screenshot
 
-# Slide 9 — Evaluation & Impact
+Insert quiz screenshot here.
 
-## How Success Will Be Measured
+### Screenshot
 
-PhishGuard can evaluate:
+Insert quiz-result screenshot here.
 
-- Pre-training awareness
-- Post-training awareness
-- Knowledge quiz scores
-- Ability to identify suspicious scenarios
-- Confidence in responding to phishing
-- Understanding of reporting procedures
 
-### Important
 
-The project will report **actual participant results only if data is collected**.
+#  Response Guide & Awareness Kit
 
-No fabricated results will be presented.
+## Feature 4 — Response Guidance
 
----
+The Response Guide teaches users to:
 
-# Slide 10 — Limitations
+### STOP
+Do not rush or interact immediately.
 
-## Project Limitations
+### CHECK
+Look for suspicious warning signs.
 
-### Sample Size
+### VERIFY
+Confirm the request through a trusted channel.
 
-A small participant group may not represent the wider population.
+### REPORT
+Follow the appropriate reporting procedure.
 
-### Short Evaluation Period
+## Awareness Resources
 
-Immediate improvement does not necessarily demonstrate long-term behavior change.
+- Awareness Guide
+- Posters
+- Response Card
+- Spot-the-Phish Exercise
+- Activity Guide
 
-### Controlled Scenarios
+### Screenshot
 
-Fictional exercises cannot represent every real-world phishing technique.
+Insert Response Guide / Awareness Kit screenshot here.
 
-### Human Behavior
 
-Awareness training reduces risk but cannot guarantee that users will always recognize phishing.
 
----
+#  Testing & Results
 
-# Slide 11 — Recommendations
+## Application Testing
 
-## Building Long-Term Phishing Awareness
+| Component | Result |
+|---|---|
+| Home | PASS |
+| Learn | PASS |
+| Spot the Phish | PASS |
+| Quiz | PASS |
+| Response Guide | PASS |
 
-Organizations should:
+## Development Testing
 
-- Conduct awareness training regularly.
-- Encourage simple phishing reporting procedures.
-- Reinforce the STOP → CHECK → VERIFY → REPORT model.
-- Promote multi-factor authentication.
-- Encourage independent verification of unusual requests.
-- Keep awareness materials updated.
-- Continue educating users as phishing techniques evolve.
+Several issues were identified and corrected during development, including:
 
----
+- Template rendering issue
+- Empty quiz template
+- Blank response-guide section
+- Python package environment issue
 
-# Slide 12 — Conclusion
+### Final Validation
+
+The main application routes returned successful HTTP 200 responses.
+
+The application was also committed and pushed to GitHub.
+
+
+
+#  Conclusion
 
 ## Think Before You Click
 
-PhishGuard addresses the human side of cybersecurity by combining:
+PhishGuard combines:
 
 **Education**
 
@@ -269,18 +300,22 @@ PhishGuard addresses the human side of cybersecurity by combining:
 
 +
 
-**Quick-Reference Guidance**
+**Assessment**
 
 +
 
-**Assessment**
+**Response Guidance**
 
-### The goal
+### Project Outcome
 
-Help users become more confident and cautious when dealing with suspicious digital communications.
+A functional phishing-awareness platform supported by practical educational resources and documentation.
 
-## STOP → CHECK → VERIFY → REPORT
+### Core Message
 
-### Thank You
+# STOP → CHECK → VERIFY → REPORT
 
-**Questions?**
+**Building Safer Digital Habits**
+
+## Thank You
+
+### Questions?
